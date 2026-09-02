@@ -1,0 +1,30 @@
+gantt
+    title 项目详细进度安排(按人)
+    dateFormat YY-MM-DD
+    axisFormat %m-%d
+    tickInterval 1day
+
+    section 刘
+        复现张晨文章:l1, 26-07-01, 26-08-15
+        对文章的所有ref找根据，翻看引文:l2, after l1, 9d
+        组织组员对成果挑刺，同时帮助组员构建框架:milestone, 26-08-18, 0d
+        构建论文基础框架:l4, after l2, 19d
+        给出半成稿:milestone, 26-09-06, 0d
+        开学 同步进度:milestone, 26-08-31, 0d
+        完成MOE建模:l7, after l3, 15d
+        写主体1:l6, 26-09-19, 26-09-22
+        主体3:l8, 26-09-27, 1d
+    section 陈
+        完成国际计划书:c0, 26-08-29, 26-09-10
+        和L思考多智能体方案:c1, after l5, 6d
+        完成引文部分 ref20+:c2, after c1, 5d
+        主体2:c3, after l6, 2d
+    section 邓
+        依照复现的单智能体方案完成单个智能体构建，测试:d1, after l3, 12d
+        寻求方法渲染:d2, after l7, 3d
+        协助方寻找测试平台:d3, after d2, 3d
+    section 方
+        依照复现的单智能体方案完成单个智能体构建，测试:f1, after l3, 12d
+        思考对照智能体:f2, after f1, 2d
+        参考张晨 思考测试方法:f3, after f2, 6d
+%%        mmdc -i gantt2.mmd -o gantt2.png -w 4000 -H 1200 -b white
