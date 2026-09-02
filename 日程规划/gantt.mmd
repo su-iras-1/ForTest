@@ -1,0 +1,29 @@
+gantt
+    title 项目详细进度安排(按人)
+    dateFormat YY-MM-DD
+    axisFormat %m-%d
+    tickInterval 1d
+
+    section 刘
+        复现张晨文章:l1,26-07-01,26-08-15
+        对文章的所有ref找根据，翻看引文：:l2,after l1,9d
+        组织组员对成果挑刺，同时帮助组员构建框架：:milestone,26-08-18,0d
+        构建论文基础框架:l4,after l2,26-09-12
+        给出半成稿:milestone,l5,26-09-06,0d
+        开学 同步进度:milestone,l3,26-08-31,0d
+        完成MOE建模:L7,after l3,15d
+        写主体1:L6，26-09-19，26-09-22
+        主体3：:after c3,26-09-27
+    section  陈
+        完成国际计划书:26-08-29,26-09-10
+        和L思考多智能体方案:c1,after l5,26-09-12
+        完成引文部分 ref20+:c2,after c1,26-09-17
+        主体2：:c3,after L6,26-09-24
+    section 邓
+        依照复现的单智能体方案完成单个智能体构建，测试:d1,after l3,26-09-12
+        寻求方法渲染: d2,after L7 ,d3
+        协助方寻找测试平台: after d2,d2
+    section 方
+        依照复现的单智能体方案完成单个智能体构建，测试:f1,after l3,26-09-12
+        思考对照智能体:f2,after f1,d2
+        参考张晨 思考测试方法: f3,after f2,d6
